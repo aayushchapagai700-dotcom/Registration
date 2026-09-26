@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif;">
+    <header style="font-size: 30px;">Student Registration Form</header>
+   <ol style="padding-left: 1%;"> <Header style="font-size: 20px; "><li>Personal Information</li></Header><br>
+<ul style="list-style-type: disc; padding-left: 0%;" >
+    <li> <label for="Full Name">Full name</label> <input type="text" name="Full Name" id="Full Name" placeholder="Full name"></li> <br>
+    <li><label for="Email">Email</label><input type="email" name="Email" id="Email" placeholder="Email"></li><br>
+    <li><label for="Phonenumber">Phonenumber</label><input type="tel" name="Phone" id="Phonenumber" placeholder="Phonenumnber"></li><br>
+    <li><label for="DOB">Date of Birth</label><input type="date" name="DOB" id="DOB" placeholder="Date of birth"></li><br>
+    <li><span>Gender</span><input type="radio" value="male" id="male" name="gender"> <label for="male">male</label><input type="radio" name="gender" id="female" value="female">
+    <label for="female">female</label>
+    <input type="radio" name="gender" id="other" value="other"><label for="other">other</label>
+</li>
+<br>
+</ul>
+<br>
+<li>Account Information</li>
+<ul style="list-style-type: disc; padding-left: 0%;" >
+    <li><Label for="Username">Username</Label><input type="text" name="Username" id="Username" minlength="5" maxlength="20"></li> <br>
+    <li><label for="password">Password</label><input type="password" name="password" id="password" minlength="8" required></li><br>
+    <li><label for="confirm">Confirm-Password</label><input type="password" name="confirm" id="confirm" required></li><br>
+
+</ul>
+<br>
+<li>Academic Information</li><br>
+<ul style="list-style-type: disc; padding-left: 0%;" >
+   <li><label for="Course">Course</label><select name="Course" id="Course">
+        <option value=""><--Select Course--></option>
+            <option value="csit">BSc. CSIT</option>
+            <option value="bca">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="BBS">BBS</option>
+            
+    </select>
+    <br><br>
+   </li>
+   <li>
+    <label for="College">College</label>
+    <input name="College" list="College" id="Colleges" placeholder="Search College">
+    <datalist id="Colleges">
+        <option value="Birendra Multiple Campus"></option>
+        <option value="Chitwan College of Technology"></option>
+        <option value="Dreams College"></option>
+        <option value="Boston College"></option>
+        <option value="Oxford College"></option>
+    </datalist>
+   </li>
+   <br>
+   <li>
+    <label for="Year">Year</label>
+    <select name="Year" id="Year">
+        <option value="Select"><--Select--></option>
+        <option value="a">2024</option>
+        <option value="b">2025</option>
+        <option value="c">2026</option>
+        <option value="d">2027</option>
+        <option value="e">2028</option>
+        <option value="f">2029</option>
+
+    </select>
+   </li>
+</ul>
+    </ol>
+    <input type="submit" name="submit" id="submit">
+</body>
+</html>
